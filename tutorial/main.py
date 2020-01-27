@@ -386,3 +386,12 @@ async def login_two(form_data: OAuth2PasswordRequestForm = Depends()):
 @app.get("/users/me-two", tags=["User"])
 async def read_users_me_two(current_user: User = Depends(get_current_active_user)):
     return current_user
+
+
+# Cookie in response
+@app.post("/cookie/")
+def create_cookie():
+    content = {"message": "Come to the dark side, we have cookies"}
+    response = JSONResponse(content=content)
+    response.set_cookie(key="fakesession", value="fake-cookie-session-value")
+    return response

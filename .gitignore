@@ -1,3 +1,7 @@
+# test databases
+*.db
+
+# secrets
 .env 
 set_environ
 
