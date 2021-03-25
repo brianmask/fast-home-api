@@ -27,7 +27,7 @@ promise==2.3
 pydantic==1.4
 pylint==2.4.4
 python-multipart==0.0.5
-PyYAML==5.3
+PyYAML==5.4
 requests==2.22.0
 Rx==1.6.1
 six==1.14.0
